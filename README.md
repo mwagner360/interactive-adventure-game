@@ -36,23 +36,3 @@ The game starts with the player having 100 health and 0 tokens. Throughout the g
     - **Victory Trophy (25 tokens)**: Buying this wins the game!
 5. **Monster Encounter**: There’s a 70% chance to encounter a monster and a 30% chance to find an item.
 6. **Game Over**: If your health reaches 0, you lose the game.
-
-## Installation
-
-### Prerequisites
-
-- Ensure you have **Python 3.x** installed on your machine. You can download Python from [here](https://www.python.org/downloads/).
-
-### How to Run the Game
-
-1. Clone or download this repository to your local machine.
-2. Navigate to the project folder in your terminal or command prompt.
-3. Run the game by using the following command:
-    ```bash
-    python game.py
-    ```
-
-### Example Command
-
-```bash
-$ python game.py
