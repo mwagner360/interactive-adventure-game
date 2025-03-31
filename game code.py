@@ -1,7 +1,7 @@
 import random
 
 # Check if the user wants to stop the game
-def check_stop(choice):
+def checkStop(choice):
     if choice.lower() == "stop":
         print("You chose to stop, Game Over")
         exit()
@@ -47,7 +47,7 @@ def shop(playerTokens, playerInventory):
 
     while True:
         choice = input("Enter the item number you want to buy or 5 to go back: ")
-        check_stop(choice)
+        checkStop(choice)
 
         if choice == "5":
             return playerTokens, playerInventory, False
@@ -100,7 +100,7 @@ def main():
         print("5. Stop")
 
         choice = input("Option: ")
-        check_stop(choice)
+        checkStop(choice)
 
         # Ends the game if the player chooses to stop
         if choice == "5":
@@ -111,7 +111,7 @@ def main():
             while True:
                 showStatus(playerHealth, playerTokens, playerInventory, shieldTurnsLeft)
                 choice = input("Enter an item name to use it or type 'back' to exit the inventory: ").title()
-                check_stop(choice)
+                checkStop(choice)
 
                 if choice == "Back":
                     break
@@ -157,7 +157,7 @@ def main():
                 else:
                     while True:
                         action = input("Do you want to fight with your hands (1) or use a sword (2)? ")
-                        check_stop(action)
+                        checkStop(action)
 
                         # Fight with hands
                         if action == "1":
